@@ -1,0 +1,62 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	O comando encontrou as diferenças entre os dois arquivos, de tal forma 
+	que se tornou fácil comparar e ver onde o erro foi introduzido.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	Acredito que assim vai ser mais fácil recuperar arquivos antigos, fazer
+	a comparação entre as diferentes versões e analisar quais mudanças foram
+	favoráveis e quais não. Além disso, isso permite fazer grandes mudanças 
+	no código sem medo de errar e perder o código que funcionava.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	Pontos positivos: Cada save vai ser bem mais significante, representando 
+	algo que o usuário achou ser importante salvar. Isso facilita na hora de
+	buscar versões antigas (UTILIZANDO GIT LOG, pois cada versão vai ter uma 
+	mudança relevante. Você pode, no Git, colocar uma mensagem explicando as 
+	mudanças, e também mostra o dia/hora e o autor da mudança.
+	
+	Pontos negativos: O usuário pode se esquecer de salvar e perder parte 
+	importante do código. Pode haver algum erro na máquina utilizada e também
+	perder uma parte importante do código.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	Pelo que eu entendi, o Git considera arquivos salvos no mesmo repositório
+	como se tivessem uma relação entre si. Isso significa que quando o usuário
+	fizer uma mudança em um, que tenha repercussão nos outros, eles podem ser
+	modificados pelo mesmo commit, sem ter q modificar um por um.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	GIT LOG: Usado para buscar todas os commits de um arquivo. Basta ir na 
+	pasta do arquivo em questão e digitar git log. Irá aparecer cada commit,
+	com seu respectivo autor, data da mudança e ID, além de uma mensagem escrita
+	pelo usuário explicando a mudança realizada. Escrever git log --stat dá 
+	as estatísticas relacionadas com as mudanças feitas. Para parar, digite 
+	q, que significa quit.
+
+	GIT DIFF: Usado para comparar diferentes versões, commits, de um arquivo. 
+	Basta ir na pasta do arquivo em questão e digitar git diff ID_1 ID_2. As 
+	linhas em preto não foram modificadas, as linhas em vermelho foram removidas
+	e as linhas em verde foram adicionadas. Pode escrever apenas os primeiros 4
+	dígitos da ID.
+	OBS: Similar ao comando FC, no Windows. Utilizado para comparar dois arquivos
+	diferentes. Para configurar as cores de output, basta digitar git config --global color.ui auto. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	Você não precisa ter medo de perder o arquivo em que o código ainda funciona,
+	pois todas as diferentes versões podem ser acessadas através do Git.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	Grandes projetos e trabalhos de faculdade.
