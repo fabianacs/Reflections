@@ -1,0 +1,57 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	Você cria um arquivo .git, que é um diretório, onde você vai ter 0
+	commits incialmente. Ele é necessário para que se possa fazer uso
+	das vantagens do Git, e é a partir dele que você pode compartilhar
+	seus códigos com outras pessoas, ajudando-as ou recebendo ajuda.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	É basicamente um espaço temporário onde você determina quais mudanças 
+	serão adicionadas no próximo commit. Primeiro, você faz as modificações
+	nos arquivos no ambiente de trabalho. Depois, você seleciona apenas as
+	mudanças que você quer que sejam parte do seu próximo commit, e coloca
+	esses arquivos na staging area. Então você faz um commit e coloca esses
+	arquivos permanentemente no seu repositório. você tem a segurança que os
+	dados estarão a sua disposição até que você execute algum processo que 
+	limpe a staging area.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Você pode fazer modificações em vários arquivos, mas apenas colocar na
+	staging area os arquivos para fazer um commit lógico.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	Quando você quer fazer mudanças experimentais, mas ainda manter seu
+	arquivo original da mesma forma. Branches permitem que você mude um
+	arquivo exatamenta igual ao original, de tal forma que este permaneça
+	a disposição e imutável sempre que você precisar voltar para ele.
+
+How do the diagrams help you visualize the branch structure?
+
+	Após várias mudanças serem feitas, os vários branches do nosso código
+	inicial pode tornar difícil de entender o programa como um só. Diagramas
+	são criados para transpor essa dificuldade e ajudar a visualizar todas
+	as mudanças e versões do código. 
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	Você vai ter todas os commit dos dois branches juntos no master. O Git
+	é capaz de comparar com o commit original (antes da criação dos branches)
+	e selecionar quais commit são relevantes para se ter na versão mesclada.
+	Nós representamos no diagrama como se fosse o branch master porque é ele
+	que continua sendo nossa versão principal.
+	
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+	Ter o Git para fazer o merge é bem mais simples e fácil de entender do que
+	ter que juntar os dois códigos manualmente. Além de manter o drigrama de
+	forma que você pode voltar atrás e ver commits antigos, que vão estar bem
+	organizados e em ordem cronológica.
+		
